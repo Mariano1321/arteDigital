@@ -1,0 +1,45 @@
+* {
+    margin: 0;                           /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                          /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box;             /* Incluye el padding y el borde dentro del ancho y alto total del elemento */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;     /* Define la fuente principal del sitio */
+  }
+  
+  .navbar {
+    display: flex;                      /* Usa Flexbox para organizar los elementos hijos */
+    justify-content: space-between;    /* Separa los elementos hijos hacia los extremos */
+    align-items: center;               /* Centra verticalmente los elementos */
+    background-color: #333;            /* Fondo oscuro para la barra de navegación */
+    padding: 10px 30px;                /* Espaciado interno arriba/abajo: 10px, izquierda/derecha: 30px */
+  }
+  
+  .nav-left a {
+    color: white;                      /* Color del texto blanco */
+    text-decoration: none;            /* Quita el subrayado de los enlaces */
+    margin-right: 40px;               /* Espacio entre enlaces a la derecha */
+    font-weight: bold;                /* Texto en negrita */
+    transition: all 0.3s ease;        /* Transición suave para cualquier cambio */
+  }
+  
+  .nav-left a:hover {
+    background-color: rgb(178, 185, 185);    /* Cambia el fondo al pasar el mouse */
+    font-size: 1.2em;                         /* Aumenta el tamaño del texto */
+    transition: all 0.3s ease;               /* Transición suave */
+    padding: 10px 15px;                      /* Añade espacio interno al enlace */
+    border-radius: 9px;                      /* Bordes redondeados */
+  }
+  
+  .nav-right .logo {
+    color: white;                      /* Color del texto blanco para el logo */
+    font-size: 20px;                   /* Tamaño de fuente del logo */
+    font-weight: bold;                /* Logo en negrita */
+  }
+  
+  .logo {
+    background-color: white;          /* Fondo blanco del contenedor del logo */
+    width: 300px;                     /* Ancho fijo del logo */
+  }
+  
