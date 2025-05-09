@@ -12,8 +12,8 @@
     font-family: Arial, sans-serif;     /* Define la fuente principal del sitio */
     background-image: url('https://images.pexels.com/photos/17685535/pexels-photo-17685535/free-photo-of-a-beach-with-people-walking-on-it-and-palm-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;       /* Hace que la imagen cubra todo el fondo */
-      background-repeat: no-repeat; /* Evita que la imagen se repita */
-      background-position: center;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
   }
   
   .navbar {
