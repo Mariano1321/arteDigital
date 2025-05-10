@@ -54,7 +54,8 @@
     max-width: 100%;
     height: auto;
     background-color: white;          /* Fondo blanco del contenedor del logo */
-    //width: 300px;                     /* Ancho fijo del logo */
+    //width: 300px;                     
+/* Ancho fijo del logo */
   }
   
   section {
