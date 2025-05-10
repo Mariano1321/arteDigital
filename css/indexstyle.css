@@ -56,14 +56,13 @@
   }
   
   section {
-      padding: 60px 20px;
-      min-height: 100vh;
+      display: none; /* Ocultar por defecto */
+      padding: 40px;
     }
 
-    #inicio { background-color: #f2f2f2; }
-    #sobremi { background-color: #e0e0e0; }
-    #trabajos { background-color: #cccccc; }
-    #contacto { background-color: #b0b0b0; }
+    section.active {
+      display: block; /* Solo mostrar la activa */
+  }
 
 
 

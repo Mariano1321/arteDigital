@@ -9,17 +9,17 @@
 <body>
   <nav class="navbar">
     <div class="nav-left">
-      <a href="#inicio">Inicio</a>
-      <a href="#sobremi">Sobre mí</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="#contacto">Contacto</a>
+      <a onclick="mostrarSeccion('inicio')">Inicio</a>
+      <a onclick="mostrarSeccion('sobremi')">Sobre mí</a>
+      <a onclick="mostrarSeccion('trabajos')">Trabajos</a>
+      <a onclick="mostrarSeccion('contacto')">Contacto</a>
     </div>
     <div class="nav-right">
       <img src="img/escuelaLogo.svg" alt="Logo" class="logo" />
     </div>
   </nav>
 
-  <section id="inicio">
+  <section id="inicio" class="active">
     <h1>Bienvenido a mi sitio web</h1>
     <p>Soy Mariano Báez, estudiante de la Escuela de Artes. Aquí podrás conocer más sobre mí y mis trabajos.</p>
   </section>
@@ -39,6 +39,15 @@
     <h2>Contacto</h2>
     <p>¿Te interesa mi trabajo? Puedes escribirme a: mariano@example.com</p>
   </section>
+
+  <script>
+    function mostrarSeccion(id) {
+      // Oculta todas las secciones
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      // Muestra la sección seleccionada
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
