@@ -4,6 +4,10 @@
     box-sizing: border-box;             /* Incluye el padding y el borde dentro del ancho y alto total del elemento */
   }
   
+  html {
+      scroll-behavior: smooth;
+  }
+
   html, body {
     height: 100%;
   }
@@ -51,3 +55,15 @@
     width: 300px;                     /* Ancho fijo del logo */
   }
   
+  section {
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    #inicio { background-color: #f2f2f2; }
+    #sobremi { background-color: #e0e0e0; }
+    #trabajos { background-color: #cccccc; }
+    #contacto { background-color: #b0b0b0; }
+
+
+
