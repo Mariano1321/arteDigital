@@ -62,9 +62,16 @@
       padding: 40px;
     }
 
-    section.active {
+  section.active {
       display: block; /* Solo mostrar la activa */
   }
+
+  .presentacion {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 
 
