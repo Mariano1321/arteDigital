@@ -71,7 +71,47 @@
     font-weight: 400;
     font-style: normal;
   }
-  
 
+  .carta-plantilla{
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 15px black;
+}
+.imagen-carta{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+.titulo-carta{
+    padding-top: 10px;
+    font-size: 30px;
+    margin: 0;
+}
+.subtitulo-carta{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.contenido-carta {
+    margin: 0px;
+    padding: 0px 20px 0px 20px;
+ text-align: justify;
+ font-size: 12px
+}
 
-
+.carta-plantilla-verde{
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  background-color: rgb(70, 158, 58);
+  margin: auto;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 15px black;
+}
