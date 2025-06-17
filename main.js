@@ -9,4 +9,4 @@ function mostrarSeccion(nombre) {
       document.getElementById("contenido-principal").innerHTML = "<p>Error al cargar la sección.</p>";
       console.error("Error cargando la sección:", error);
     });
-}'inicio'
+}
