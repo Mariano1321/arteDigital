@@ -57,17 +57,16 @@
 /* Ancho fijo del logo */
   }
   
-  /*
+  
   section {
-      display: none; /* Ocultar por defecto */
+      display: block; /* Ocultar por defecto */
       padding: 40px;
     }
 
   section.active {
       display: block; /* Solo mostrar la activa */
   }
-  */
-
+  
   .presentacion {
     font-family: "Tagesschrift", system-ui;
     font-weight: 400;
