@@ -1,7 +1,7 @@
 async function mostrarSeccion(seccion) {
   const contenedor = document.getElementById('contenido');
   try {
-    const response = await fetch(html/${seccion}.html);
+    const response = await fetch(`html/${seccion}.html`);
     if (!response.ok) throw new Error('No se pudo cargar la sección');
     const html = await response.text();
     contenedor.innerHTML = html;
