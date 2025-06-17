@@ -6,7 +6,7 @@ async function mostrarSeccion(seccion) {
     const html = await response.text();
     contenedor.innerHTML = html;
   } catch (err) {
-    contenedor.innerHTML = <p>Error al cargar la sección: ${err.message}</p>;
+    contenedor.innerHTML = `<p>Error al cargar la sección: ${err.message}</p>`;
   }
 }
 
