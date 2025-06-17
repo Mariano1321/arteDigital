@@ -1,12 +1,16 @@
-function mostrarSeccion(nombre) {
-  const ruta = `html/${nombre}.html`;
-  fetch(ruta)
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("contenido-principal").innerHTML = html;
-    })
-    .catch(error => {
-      document.getElementById("contenido-principal").innerHTML = "<p>Error al cargar la sección.</p>";
-      console.error("Error cargando la sección:", error);
-    });
+async function mostrarSeccion(seccion) {
+  const contenedor = document.getElementById('contenido');
+  try {
+    const response = await fetch(html/${seccion}.html);
+    if (!response.ok) throw new Error('No se pudo cargar la sección');
+    const html = await response.text();
+    contenedor.innerHTML = html;
+  } catch (err) {
+    contenedor.innerHTML = <p>Error al cargar la sección: ${err.message}</p>;
+  }
 }
+
+// Cargar sección inicial al abrir la página
+document.addEventListener("DOMContentLoaded", () => {
+  mostrarSeccion('inicio');
+})
