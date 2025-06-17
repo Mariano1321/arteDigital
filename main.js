@@ -1,5 +1,5 @@
 function mostrarSeccion(nombre) {
-  const ruta = `html/${'inicio'}.html`;
+  const ruta = `html/${nombre}.html`;
   fetch(ruta)
     .then(res => res.text())
     .then(html => {
