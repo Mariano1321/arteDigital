@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mariano Báez - Escuela de Artes</title>
   <link rel="stylesheet" href="css/indexstyle.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
@@ -15,88 +16,19 @@
       <a onclick="mostrarSeccion('inicio')">Inicio</a>
       <a onclick="mostrarSeccion('sobremi')">Sobre mí</a>
       <a onclick="mostrarSeccion('trabajos')">Trabajos</a>
-      <a onclick="mostrarSeccion('contacto')">Contacto</a>
+      <a onclick="mostrarSeccion('contactos')">Contacto</a>
     </div>
     <div class="nav-right">
       <img src="img/escuelaLogo.svg" alt="Logo" class="logo" />
     </div>
   </nav>
 
-  <section id="inicio" class="active">
-    <div class="presentacion">
-      <h1>Bienvenido a mi sitio web</h1>
-      <p>Soy Mariano Báez, estudiante de la Escuela de Artes. Aquí podrás conocer más sobre mí y mis trabajos.</p>
-  </div>
-  </section>
+  <!-- Contenedor donde se cargan las secciones -->
+  <main id="contenido">
+    <!-- Se carga por JS -->
+  </main>
 
-  <section id="sobremi">
-    <div class = "carta-plantilla">
-      <img class = "imagen-carta" src ="img/mifoto.jpeg"<>
-          <h1 class = "Tilulo-carta"> Mariano Baez </h1>
-          <h2 class = "subtitulo-carta"> Musico y Basquetbolista </h2>
-          <P class = "contenido-carta"> Toco en una banda y juego de Ala-Pivot en Villa San Martin </P>
-      </div>
-      <div class = "carta-plantilla-verde">
-          <img class = "imagen-carta" src ="img/mifoto.jpeg">
-              <h1 class = "Tilulo-carta"> Mariano Baez </h1>
-              <h2 class = "subtitulo-carta"> Estudiante y persona </h2>
-              <P class = "contenido-carta"> Aprendo rápido algunas cosas, soy un poco revoltoso en las clases cuando estoy sin hacer nada por un tiempo y me gusta hablar mucho, aún así no me gustan mucho las fiestas, prefiero juntarme con mis amigos. </P>
-          </div>  
-  </section>
-
-  <section id="trabajos" class="presentacion">
-    <div class="presentacion">
-        <div class="contenedor">
-          <div class="miDiv">
-            <img class="imgTrabajo" src="img/imagen-perrito.jpg">
-            
-            <div class="info">
-              <h2 class="titulo">Sueños, Identidad y Olvido</h2>
-              <div class="descripcion">
-                Una mujer (Laura Elena Harring) de cabellos oscuros es abandonada amnésica después de un accidente automovilístico.
-              </div>
-            </div>
-          </div>
-          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-          <div class="miDiv">
-            <img class="imgTrabajo" src="img/imagen-perrito.jpg">
-            <div class="info">
-              <h2 class="titulo">El color de la nostalgia</h2>
-              <div class="descripcion">
-                Una mirada visual sobre la memoria y los recuerdos fragmentados.
-              </div>
-            </div>
-          </div>
-          <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-          <div class="miDiv">
-            <img class="imgTrabajo" src="img/imagen-perrito.jpg">
-            <div class="info">
-              <h2 class="titulo">El color de la nostalgia</h2>
-              <div class="descripcion">
-                Una mirada visual sobre la memoria y los recuerdos fragmentados.
-              </div>
-            </div>
-          </div>
-    </div>
-    
-    <!-- Aquí podrías agregar imágenes o enlaces a proyectos -->
-  </section>
-
-  <section id="contacto" class="presentacion">
-    <div class="presentacion">
-      <h2>Contacto</h2>
-      <p>¿Te interesa mi trabajo? Puedes escribirme a: mariano@example.com</p>
-      </div>
-  </section>
-
-  <script>
-    function mostrarSeccion(id) {
-      // Oculta todas las secciones
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-      // Muestra la sección seleccionada
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
+
